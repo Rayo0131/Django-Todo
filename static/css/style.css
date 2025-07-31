@@ -1,5 +1,61 @@
 header{
-    background: ;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.584), rgba(0, 0, 0, 0.411)),
+                url('../image/banner-21.jpg');
     height: 700px;
-    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.banner-caption{
+    color: white;
+    margin-top: 10%;
+    text-align: center;
+    width: 70%;
+}
+.banner-caption h1{
+    font-size: 4rem;
+}
+.banner-caption p{
+    font-size: 1.5rem;
+}
+.faq{
+    margin: 40px 0;
+}
+.faq h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.accordion-item, .accordion-item button{
+    font-size: 1.3rem;
+}
+footer{
+    margin: ;
+    padding: 10px 0;
+    background-color: black;
+    color: rgba(245, 222, 179, 0.792);
+    text-align: center;
+}
+footer span{
+    color: orangered;
+}
+.navbar-collapsed {
+  flex-grow: 0;
+    
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.login section{
+    flex: 1;
+}
+.login div{
+    flex: 1;
+}
+.bg-body{
+    background-image: url("../image/log-bg.jpg");
+    background-size: cover;
 }
