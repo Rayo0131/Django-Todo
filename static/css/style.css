@@ -30,7 +30,7 @@ header{
     font-size: 1.3rem;
 }
 footer{
-    margin: ;
+    /* margin: ; */
     padding: 10px 0;
     background-color: black;
     color: rgba(245, 222, 179, 0.792);
@@ -45,12 +45,27 @@ footer span{
 }
 .login{
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    /* justify-content: center; */
+    /* align-items: flex-start; */
+    margin-top: 10% auto;
+    border-radius: 20px;
+    height: 400px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 
 }
-.login section{
+.login section,
+.login div{
     flex: 1;
+    height: 100%;
+}
+.login section{
+    background-color: whitesmoke;
+    padding: 5rem 2rem;
+    border-radius: 20px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .login div{
     flex: 1;
@@ -58,4 +73,33 @@ footer span{
 .bg-body{
     background-image: url("../image/log-bg.jpg");
     background-size: cover;
+}
+.login label{
+    display: block;
+    font-size: 0.7rem;
+}
+.login input{
+    width: 100%;
+    outline: none;
+    height: 2rem;
+    border: none;
+}
+.login button{
+    width: 100%;
+    outline: none;
+    height: 2rem;
+    background-color: #de0000;
+    color: white;
+    border: none;
+}
+.login img{
+    object-fit: cover;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+}
+.login form{
+    margin-bottom: 3rem;
+}
+.login ul{
+    display: none;
 }
