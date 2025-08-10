@@ -47,7 +47,7 @@ footer span{
     display: flex;
     /* justify-content: center; */
     /* align-items: flex-start; */
-    margin-top: 10% auto;
+    margin: 10% auto;
     border-radius: 20px;
     height: 400px;
     overflow: hidden;
@@ -103,3 +103,44 @@ footer span{
 .login ul{
     display: none;
 }
+.task-create{
+    margin: 10% auto;
+    padding: 1.5rem;
+    border-radius: 20px;
+    max-height: 100vh;
+    /* overflow: hidden; */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    /* text-align: left; */
+    background-color:rgba(0, 0, 0, 0.632);
+    color: rgba(255, 255, 255, 0.683);
+}
+.task-create button{
+   background-color: #de0000;
+   border-radius: 4px;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+.task-create button:hover{
+    background-color: chocolate;
+}
+.create-img{
+    width: 70%;
+}
+.task-create input, textarea{
+    background-color: rgba(255, 255, 255, 0.836);
+    border: none;
+}
+.task-create a{
+    color: rgba(255, 255, 255, 0.961);
+    text-decoration: none;
+}
+.task-form{
+    width: 40%;
+}
+/* .task-form input{
+    width: 60%;
+} */
