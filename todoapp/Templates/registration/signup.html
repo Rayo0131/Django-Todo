@@ -11,15 +11,35 @@
     <title>Sign Up</title>
 </head>
 <body>
-    <main class="w-50 mx-auto login"> 
+    <main class="w-50 mx-auto signup"> 
         <div><img src="{% static "image/login-img.jpg" %}" width="100%"  alt=""></div>
         <section>
         <h1>Sign Up</h1>
-        <form action="" method="post">
-            {% csrf_token %}
-            {{ form.as_p}}
-        <button type="submit">Sign Up</button>
-        </form>
+        <form method="post">
+                {% csrf_token %}
+                <div class="mb-4">
+                    <label for="{{ form.username.id_for_label }}" class="block text-sm font-medium text-gray-700">Username</label>
+                    {{ form.username }}
+                    {% if form.username.errors %}
+                        <p class="text-red-500 text-sm mt-1">{{ form.username.errors.as_text }}</p>
+                    {% endif %}
+                </div>
+                <div class="mb-4">
+                    <label for="{{ form.password1.id_for_label }}" class="block text-sm font-medium text-gray-700">Password</label>
+                    {{ form.password1 }}
+                    {% if form.password1.errors %}
+                        <p class="text-red-500 text-sm mt-1">{{ form.password1.errors.as_text }}</p>
+                    {% endif %}
+                </div>
+                <div class="mb-6">
+                    <label for="{{ form.password2.id_for_label }}" class="block text-sm font-medium text-gray-700">Confirm Password</label>
+                    {{ form.password2 }}
+                    {% if form.password2.errors %}
+                        <p class="text-red-500 text-sm mt-1">{{ form.password2.errors.as_text }}</p>
+                    {% endif %}
+                </div>
+                <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md font-medium">Sign Up</button>
+            </form>
         <p>Already have an account? <a href="{% url 'login' %}">Login</a></p>
         </section>
     </main>

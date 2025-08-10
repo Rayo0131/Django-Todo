@@ -88,7 +88,7 @@ footer span{
     width: 100%;
     outline: none;
     height: 2rem;
-    background-color: #de0000;
+    background-color: #01D48F;
     color: white;
     border: none;
 }
@@ -101,7 +101,7 @@ footer span{
     margin-bottom: 3rem;
 }
 .login ul{
-    display: none;
+    /* display: none; */
 }
 .task-create{
     margin: 10% auto;
@@ -125,7 +125,7 @@ footer span{
     padding: 10px 20px;
 }
 .task-create button:hover{
-    background-color: chocolate;
+    background-color: #DE0000;
 }
 .create-img{
     width: 70%;
@@ -144,3 +144,100 @@ footer span{
 /* .task-form input{
     width: 60%;
 } */
+.task-list{
+    width: 50%;
+    background-color:rgba(0, 0, 0, 0.632);
+    margin: 20px auto 10% auto;
+    padding: 3rem;
+    color: white;
+}
+.task-list li{
+    background-color: #01d48e95;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.task-list a{
+    color: white;
+}
+.task-list a:hover{
+    color: bisque;
+}
+.task-list li:hover{
+    background-color: black;
+}
+.task-list li:nth-child(even){
+    background-color: #DE0000;
+    
+}
+.task-list li:nth-child(even):hover{
+    background-color: black;
+}
+.task-list h3{
+    text-align: center;
+    text-transform: uppercase;
+}
+.cont{
+    width: 50%;
+    margin: 5% auto 20px auto;
+    padding: 3rem;
+   text-align: center;
+}
+.signup{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: flex-start; */
+    margin: 10% auto;
+    border-radius: 20px;
+    height: 400px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+}
+.signup section,
+.signup div{
+    flex: 1;
+    height: 100%;
+}
+.signup section{
+   background-color: whitesmoke;
+    padding: 2rem 2rem;
+    border-radius: 20px 0 0 20px;
+    
+}
+.signup div{
+    flex: 1;
+}
+
+
+.signup label{
+    display: block;
+    font-size: 0.7rem;
+}
+.signup input{
+    width: 100%;
+    outline: none;
+    height: 2rem;
+    border: none;
+}
+.signup button{
+    width: 100%;
+    outline: none;
+    height: 2rem;
+    background-color: #01D48F;
+    color: white;
+    border: none;
+    margin-top: 1rem;
+}
+.signup img{
+    object-fit: cover;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+}
+/* .signup form{
+    margin-bottom: 3rem;
+} */
+.signup ul{
+    /* display: none; */
+}

@@ -16,11 +16,21 @@
   <div class="container mt-5">
     <a class="navbar-brand" href="{% url "home" %}"><img src="{% static "image/TaskBuddy.png" %}" alt="" height='45'></a>
     
-    <div class=" navbar-collapsed" id="navbarSupportedContent">
+    <div class="d-flex gap-3 align-items-center justify-content-center navbar-collapsed" id="navbarSupportedContent" >
+      {% if user.is_authenticated %}
+      <span class='text-white'>Hello, {{user.username}} </span>
       
+       <form action="{% url 'logout' %}" method='post'>
+            {% csrf_token %}
+                <button type="submit" class="btn btn-danger" >Log out</button>
+           </form>
+           {% else %}
+            <a href="{% url "login" %}" class="btn btn-success">Sign In</a>
+      {% endif %}
+
      
        
-        <a href="{% url "login" %}" class="btn btn-success">Sign In</a>
+        
      
     </div>
   </div>
